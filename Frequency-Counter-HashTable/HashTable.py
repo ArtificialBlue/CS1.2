@@ -12,7 +12,8 @@ class HashTable:
     return [LinkedList() for i in range(size)]
 
   def hash_func(self, key):
-    pass
+    result = hash(key) % self.size
+    return result
 
   def insert(self, key, value):
     pass
