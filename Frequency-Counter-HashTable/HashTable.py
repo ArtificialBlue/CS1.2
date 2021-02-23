@@ -26,7 +26,28 @@ class HashTable:
     else:
       index_list.append((key,value))
   def print_key_values(self):
-    pass
+    for lst in self.arr:
+      current = lst.head
+      if current == None:
+        pass
+      else:
+        for i in range(lst.length()):
+           print(f'{current.data[0]}: {current.data[1]}')
+           current = current.next
     
+
+#------------Testing Section------------#
+testHashTable = HashTable(10)
+
+testHashTable.insert("Beet", 21)
+testHashTable.insert("Beet", 21)
+testHashTable.insert("Meet", 21)
+testHashTable.insert("Yeet", 21)
+testHashTable.insert("Leet", 21)
+testHashTable.insert("Seet", 21)
+testHashTable.insert("Veet", 21)
+
+for lst in testHashTable.arr:
+  lst.print_nodes()
 
   
