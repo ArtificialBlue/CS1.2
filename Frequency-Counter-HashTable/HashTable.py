@@ -16,8 +16,15 @@ class HashTable:
     return result
 
   def insert(self, key, value):
-    pass
-
+    index_list = self.arr[self.hash_func(key)]
+    current = index_list.head
+    if current == None:
+      index_list.append((key,value))
+    elif current.data[0] == key:
+      current.data = (key, current.data[1] + value )
+      current = current.next
+    else:
+      index_list.append((key,value))
   def print_key_values(self):
     pass
     
