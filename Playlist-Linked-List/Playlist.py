@@ -9,6 +9,7 @@ class Playlist:
     newest_song.set_next_song(self.__first_song)
     self.__first_song = newest_song
 
+
   def find_song(self, title):
     current_song = self.__first_song
     index = 0
