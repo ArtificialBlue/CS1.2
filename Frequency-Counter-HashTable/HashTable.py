@@ -7,7 +7,9 @@ class HashTable:
     self.arr = self.create_arr(size)
 
   def create_arr(self, size):
-    pass
+    #Note: "[LinkedList()] * size" creates a single LinkedList in-memory, and simply multiplies the same LinkedList.
+    #Meaning Operations you do on one, you do on all.
+    return [LinkedList() for i in range(size)]
 
   def hash_func(self, key):
     pass
