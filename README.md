@@ -8,3 +8,8 @@ Assignment 2: Algorithms Problem Set
 
 Practice with the process of iterating through lists; finding the minimum and maximum value of a list, coding the recursive version of Selection Sort.
 
+Assignment 3: Frequency Counting Hash Table
+
+--------------
+
+Assignment 4: Data Structures Problem Set
